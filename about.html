@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Indra Ganesan College of Engineering</title>
+    <meta name="description" content="Learn about IGCE - our history, mission, vision, and commitment to excellence in engineering education">
+    <link rel="icon" type="image/x-icon" href="img/Logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 900: '#002B5B' },
+                        secondary: { 500: '#FFD700', 600: '#ccaa00' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script>
+        // Add scroll animation to header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a href="placements.html">Placement</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="examination.html">Controller of Examination</a>
+        <a href="nirf.html">NIRF</a>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-white shadow-md z-40" id="mainHeader">
+        <div class="container mx-auto px-4">
+                <nav class="flex flex-wrap items-center gap-3 text-base font-semibold quick-links" aria-label="Quick links">
+                    <a href="placements.html" class="hover:text-secondary-300">Placement</a>
+                    <a href="alumni.html" class="hover:text-secondary-300">Alumni</a>
+                    <a href="examination.html" class="hover:text-secondary-300">Controller of Examination</a>
+                    <a href="contact.html" class="hover:text-secondary-300">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-14 h-14 flex items-center justify-center">
+                    <img src="img/logo.png" alt="IGCE logo" class="w-14 h-14 object-contain site-logo" onerror="this.style.display='none'">
+                </div>
+                <div>
+                    <h1 class="text-primary-900 font-bold text-xl md:text-2xl">Indra Ganesan College of Engineering</h1>
+                    <p class="text-xs text-gray-600">Affiliated to Anna University | NAAC B+ Accredited</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Home</a>
+                <a href="about.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors" aria-current="page">About</a>
+                <a href="academics.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Academics</a>
+                <a href="departments.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Departments</a>
+                <a href="research.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Research</a>
+            </nav>
+            <a href="admissions.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-2 px-4 rounded-md transition-all">Admissions</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary-900 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">About IGCE</h1>
+            <p class="text-xl max-w-3xl mx-auto">Shaping Engineers, Building Futures Since 2008</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-3">
+        <div class="container mx-auto px-4">
+            <nav class="flex text-sm" aria-label="Breadcrumb">
+                <a href="index.html" class="text-primary-900 hover:text-secondary-500">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gray-600">About</span>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <!-- Introduction -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-primary-900 mb-6">Welcome to IGCE</h2>
+                        <p class="text-gray-700 mb-4">Indra Ganesan College of Engineering (IGCE) was established in 2008 with a vision to provide quality technical education and produce skilled engineers who can contribute to society and industry.</p>
+                        <p class="text-gray-700 mb-4">Located in the heart of Tiruchirappalli, Tamil Nadu, IGCE is affiliated to Anna University and accredited by NAAC with a B+ grade. Our institution is committed to academic excellence, innovation, and holistic student development.</p>
+                        <p class="text-gray-700">We offer undergraduate and postgraduate programs across various engineering disciplines, supported by state-of-the-art infrastructure, experienced faculty, and strong industry connections.</p>
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=600&h=400&fit=crop" alt="IGCE Campus" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-primary-900 p-3 rounded-full mr-4">
+                                <i data-feather="eye" class="text-white w-8 h-8"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-900">Our Vision</h2>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">To be a center of excellence in engineering education, research, and innovation, producing globally competent professionals who contribute to technological advancement and societal welfare.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-primary-900 p-3 rounded-full mr-4">
+                                <i data-feather="target" class="text-white w-8 h-8"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-900">Our Mission</h2>
+                        </div>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-secondary-500 mr-2 mt-1 flex-shrink-0"></i>
+                                <span>Provide quality education with industry-relevant curriculum</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-secondary-500 mr-2 mt-1 flex-shrink-0"></i>
+                                <span>Foster research, innovation, and entrepreneurship</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-secondary-500 mr-2 mt-1 flex-shrink-0"></i>
+                                <span>Develop ethical and socially responsible engineers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check-circle" class="text-secondary-500 mr-2 mt-1 flex-shrink-0"></i>
+                                <span>Build strong industry-academia partnerships</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-primary-900 mb-12">Our Core Values</h2>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center p-6">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="star" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-primary-900 mb-2">Excellence</h3>
+                        <p class="text-gray-600">Striving for the highest standards in everything we do</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="shield" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-primary-900 mb-2">Integrity</h3>
+                        <p class="text-gray-600">Upholding honesty and ethical values in all actions</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="zap" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-primary-900 mb-2">Innovation</h3>
+                        <p class="text-gray-600">Encouraging creativity and forward-thinking solutions</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="heart" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-xl text-primary-900 mb-2">Compassion</h3>
+                        <p class="text-gray-600">Caring for our community and society at large</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Team -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-primary-900 mb-12">Our Leadership</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                        <div class="h-64 bg-primary-200">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Principal" alt="Principal" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-primary-900 mb-1">Dr. Rajesh Kumar</h3>
+                            <p class="text-secondary-500 font-medium mb-3">Principal</p>
+                            <p class="text-gray-600 text-sm">PhD in Computer Science, 25 years of experience in academia and research</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                        <div class="h-64 bg-primary-200">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Dean" alt="Dean" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-primary-900 mb-1">Dr. Meena Sundaram</h3>
+                            <p class="text-secondary-500 font-medium mb-3">Dean of Academics</p>
+                            <p class="text-gray-600 text-sm">PhD in Electronics, Former industry expert with 20 years of experience</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                        <div class="h-64 bg-primary-200">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=HOD" alt="Registrar" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-primary-900 mb-1">Mr. Venkatesh Iyer</h3>
+                            <p class="text-secondary-500 font-medium mb-3">Registrar</p>
+                            <p class="text-gray-600 text-sm">MBA, 15 years in educational administration and student affairs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accreditations -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-primary-900 mb-12">Accreditations & Affiliations</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="w-24 h-24 bg-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-3xl font-bold text-primary-900">B+</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-900 mb-2">NAAC Accredited</h3>
+                        <p class="text-gray-600">Recognized for quality education by National Assessment and Accreditation Council</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="w-24 h-24 bg-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="award" class="text-primary-900 w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-900 mb-2">Anna University</h3>
+                        <p class="text-gray-600">Affiliated to Anna University, Chennai for all undergraduate and postgraduate programs</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="w-24 h-24 bg-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="check-square" class="text-primary-900 w-12 h-12"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-900 mb-2">AICTE Approved</h3>
+                        <p class="text-gray-600">Approved by All India Council for Technical Education</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 mr-3">
+                                <img src="img/logo.png" alt="IGCE logo" class="w-10 h-10 object-contain">
+                            </div>
+                            <h3 class="text-white font-bold text-lg">IGCE</h3>
+                    </div>
+                    <p class="mb-4">Established in 2008, affiliated to Anna University, and accredited with NAAC B+ grade.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="departments.html" class="hover:text-white transition-colors">Departments</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                    <div class="space-y-2">
+                        <p>Madurai Main Rd, Manikandam, Tiruchirappalli, Tamil Nadu 620012</p>
+                        <p>Phone: +91 85086 88845</p>
+                        <p>Email: info@igceng.in</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p>&copy; 2024 Indra Ganesan College of Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-secondary-500 text-primary-900 p-3 rounded-full shadow-lg opacity-0 invisible transition-all">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

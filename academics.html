@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | IGCE</title>
+    <link rel="icon" type="image/x-icon" href="img/Logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script>
+        // Add scroll animation to header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a href="placements.html">Placement</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="examination.html">Controller of Examination</a>
+        <a href="nirf.html">NIRF</a>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-white shadow-md z-40" id="mainHeader">
+        <div class="container mx-auto px-4">
+                <nav class="flex flex-wrap items-center gap-3 text-base font-semibold quick-links" aria-label="Quick links">
+                    <a href="placements.html" class="hover:text-secondary-300">Placement</a>
+                    <a href="alumni.html" class="hover:text-secondary-300">Alumni</a>
+                    <a href="examination.html" class="hover:text-secondary-300">Controller of Examination</a>
+                    <a href="nirf.html" class="hover:text-secondary-300">NIRF</a>
+                    <a href="accreditation.html" class="hover:text-secondary-300">Accreditation</a>
+                    <a href="careers.html" class="hover:text-secondary-300">Careers</a>
+                    <a href="faculty.html" class="hover:text-secondary-300">Faculty</a>
+                    <a href="blogs.html" class="hover:text-secondary-300">Blogs</a>
+                    <a href="contact.html" class="hover:text-secondary-300">Contact Us</a>
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 mr-3">
+                            <img src="img/logo.png" alt="IGCE logo" class="w-10 h-10 object-contain">
+                        </div>
+                        <h3 class="text-white font-bold text-lg">Indra Ganesan College of Engineering</h3>
+                    </div>
+                    <p class="mb-4">Established in 2008, affiliated to Anna University, and accredited with NAAC B+ grade.</p>
+                </div>
+                <div>
+                    <h1 class="text-primary-900 font-bold text-xl md:text-2xl">Indra Ganesan College of Engineering</h1>
+                    <p class="text-xs text-gray-600">Affiliated to Anna University | NAAC B+ Accredited</p>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-6" aria-label="Main navigation">
+                <a href="index.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Home</a>
+                <div class="relative group">
+                    <button class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">About</button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+                        <a href="about.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">About IGCE</a>
+                        <a href="leadership.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Leadership</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Academics</button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+                        <a href="academics.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Programs</a>
+                        <a href="admissions.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Admissions</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Departments</button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+                        <a href="departments.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">All Departments</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Research</button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+                        <a href="research.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Research Overview</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Our Campuses</button>
+                    <div class="absolute left-0 mt-2 w-48 bg-white shadow-md rounded-md py-2 hidden group-hover:block">
+                        <a href="campuses.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50">Campus Locations</a>
+                    </div>
+                </div>
+            </nav>
+
+            <a href="admissions.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-2 px-4 rounded-md transition-all">Admissions</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-primary-900 mb-6">Academics</h2>
+        <p class="text-gray-700">This is a placeholder Academics page. Add details about programs, syllabi, departments, and academic resources here.</p>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

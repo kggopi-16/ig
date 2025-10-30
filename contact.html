@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Indra Ganesan College of Engineering</title>
+    <meta name="description" content="Get in touch with IGCE - Contact information, location, and inquiry form">
+    <link rel="icon" type="image/x-icon" href="img/Logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 900: '#002B5B' },
+                        secondary: { 500: '#FFD700', 600: '#ccaa00' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script>
+        // Add scroll animation to header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a href="placements.html">Placement</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="examination.html">Controller of Examination</a>
+        <a href="nirf.html">NIRF</a>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-white shadow-md z-40" id="mainHeader">
+        <div class="container mx-auto px-4">
+                <nav class="flex flex-wrap items-center gap-3 text-base font-semibold quick-links" aria-label="Quick links">
+                    <a href="placements.html" class="hover:text-secondary-300">Placement</a>
+                    <a href="alumni.html" class="hover:text-secondary-300">Alumni</a>
+                    <a href="contact.html" class="hover:text-secondary-300">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-14 h-14 flex items-center justify-center">
+                    <img src="img/logo.png" alt="IGCE logo" class="w-14 h-14 object-contain site-logo" onerror="this.style.display='none'">
+                </div>
+                <div>
+                    <h1 class="text-primary-900 font-bold text-xl md:text-2xl">Indra Ganesan College of Engineering</h1>
+                    <p class="text-xs text-gray-600">Affiliated to Anna University | NAAC B+ Accredited</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Home</a>
+                <a href="about.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">About</a>
+                <a href="academics.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Academics</a>
+                <a href="departments.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Departments</a>
+            </nav>
+            <a href="admissions.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-2 px-4 rounded-md transition-all">Admissions</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary-900 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl max-w-3xl mx-auto">We'd love to hear from you. Get in touch with us today!</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-3">
+        <div class="container mx-auto px-4">
+            <nav class="flex text-sm" aria-label="Breadcrumb">
+                <a href="index.html" class="text-primary-900 hover:text-secondary-500">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gray-600">Contact</span>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <!-- Contact Information Cards -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="map-pin" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-900 mb-3">Visit Us</h3>
+                        <p class="text-gray-600">Madurai Main Rd, Manikandam,<br>Tiruchirappalli,<br>Tamil Nadu 620012</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="phone" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-900 mb-3">Call Us</h3>
+                        <p class="text-gray-600">
+                            <a href="tel:+918508688845" class="hover:text-secondary-500">+91 85086 88845</a><br>
+                            <a href="tel:+914312345678" class="hover:text-secondary-500">+91 431 234 5678</a>
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="mail" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-primary-900 mb-3">Email Us</h3>
+                        <p class="text-gray-600">
+                            <a href="mailto:info@igceng.in" class="hover:text-secondary-500">info@igceng.in</a><br>
+                            <a href="mailto:admissions@igceng.in" class="hover:text-secondary-500">admissions@igceng.in</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Contact Form and Map -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Contact Form -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <h2 class="text-2xl font-bold text-primary-900 mb-6">Send us a Message</h2>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-500" placeholder="Enter your name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-500" placeholder="your.email@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-500" placeholder="+91 12345 67890">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-700 font-medium mb-2">Subject *</label>
+                                <select id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-500">
+                                    <option value="">Select a subject</option>
+                                    <option value="admissions">Admissions Inquiry</option>
+                                    <option value="academic">Academic Information</option>
+                                    <option value="placement">Placement Related</option>
+                                    <option value="facilities">Campus Facilities</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Message *</label>
+                                <textarea id="message" name="message" required rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-secondary-500" placeholder="Write your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="bg-primary-900 hover:bg-secondary-500 hover:text-primary-900 text-white font-bold py-3 px-8 rounded-md transition-colors w-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Map -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <h2 class="text-2xl font-bold text-primary-900 p-6 pb-4">Find Us Here</h2>
+                        <div class="h-[500px]">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6227766!2d78.7167!3d10.8155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDQ4JzU1LjgiTiA3OMKwNDMnMDAuMSJF!5e0!3m2!1sen!2sin!4v1234567890" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="IGCE Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Department Contacts -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-primary-900 mb-12">Department Contacts</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-primary-900 mb-2">Admissions Office</h3>
+                        <p class="text-gray-600 text-sm mb-2">For admission-related queries</p>
+                        <p class="text-gray-700"><i data-feather="phone" class="inline w-4 h-4"></i> +91 85086 88845</p>
+                        <p class="text-gray-700"><i data-feather="mail" class="inline w-4 h-4"></i> admissions@igceng.in</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-primary-900 mb-2">Placement Cell</h3>
+                        <p class="text-gray-600 text-sm mb-2">For recruitment and placements</p>
+                        <p class="text-gray-700"><i data-feather="phone" class="inline w-4 h-4"></i> +91 85086 88846</p>
+                        <p class="text-gray-700"><i data-feather="mail" class="inline w-4 h-4"></i> placements@igceng.in</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-primary-900 mb-2">Examination Cell</h3>
+                        <p class="text-gray-600 text-sm mb-2">For exam-related information</p>
+                        <p class="text-gray-700"><i data-feather="phone" class="inline w-4 h-4"></i> +91 85086 88847</p>
+                        <p class="text-gray-700"><i data-feather="mail" class="inline w-4 h-4"></i> exams@igceng.in</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-primary-900 mb-2">Library</h3>
+                        <p class="text-gray-600 text-sm mb-2">For library services</p>
+                        <p class="text-gray-700"><i data-feather="phone" class="inline w-4 h-4"></i> +91 85086 88848</p>
+                        <p class="text-gray-700"><i data-feather="mail" class="inline w-4 h-4"></i> library@igceng.in</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-primary-900 mb-2">Hostel Office</h3>
+                        <p class="text-gray-600 text-sm mb-2">For accommodation queries</p>
+                        <p class="text-gray-700"><i data-feather="phone" class="inline w-4 h-4"></i> +91 85086 88849</p>
+                        <p class="text-gray-700"><i data-feather="mail" class="inline w-4 h-4"></i> hostel@igceng.in</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-lg font-bold text-primary-900 mb-2">Alumni Relations</h3>
+                        <p class="text-gray-600 text-sm mb-2">For alumni network</p>
+                        <p class="text-gray-700"><i data-feather="phone" class="inline w-4 h-4"></i> +91 85086 88850</p>
+                        <p class="text-gray-700"><i data-feather="mail" class="inline w-4 h-4"></i> alumni@igceng.in</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Hours -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold text-primary-900 mb-6 text-center">Office Hours</h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="font-medium text-gray-700">Monday - Friday</span>
+                            <span class="text-gray-600">9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="flex justify-between border-b pb-3">
+                            <span class="font-medium text-gray-700">Saturday</span>
+                            <span class="text-gray-600">9:00 AM - 1:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="font-medium text-gray-700">Sunday & Holidays</span>
+                            <span class="text-gray-600">Closed</span>
+                        </div>
+                    </div>
+                    <p class="mt-6 text-center text-gray-600 text-sm">For urgent matters outside office hours, please email us at info@igceng.in</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 mr-3">
+                                <img src="img/logo.png" alt="IGCE logo" class="w-10 h-10 object-contain">
+                            </div>
+                            <h3 class="text-white font-bold text-lg">Indra Ganesan College of Engineering</h3>
+                    </div>
+                    <p class="mb-4">Established in 2008, affiliated to Anna University.</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition-colors">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                    <p>Tiruchirappalli, Tamil Nadu 620012</p>
+                    <p>Phone: +91 85086 88845</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p>&copy; 2024 Indra Ganesan College of Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-secondary-500 text-primary-900 p-3 rounded-full shadow-lg opacity-0 invisible transition-all">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

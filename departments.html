@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments | Indra Ganesan College of Engineering</title>
+    <meta name="description" content="Explore our engineering departments - CSE, ECE, Mechanical, Civil and more">
+    <link rel="icon" type="image/x-icon" href="img/Logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 900: '#002B5B', 100: '#e6f0ff' },
+                        secondary: { 500: '#FFD700', 600: '#ccaa00' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script>
+        // Add scroll animation to header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Combined quick links + main header (non-fixed). -->
+    <header class="bg-white shadow-md z-40" id="mainHeader">
+                <div class="bg-primary-900 text-white text-xs py-1">
+            <div class="container mx-auto px-4">
+                <nav class="flex flex-wrap items-center gap-3 text-base font-semibold quick-links" aria-label="Quick links">
+                    <a href="placements.html" class="hover:text-secondary-300">Placement</a>
+                    <a href="alumni.html" class="hover:text-secondary-300">Alumni</a>
+                    <a href="contact.html" class="hover:text-secondary-300">Contact Us</a>
+                </nav>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-14 h-14 flex items-center justify-center">
+                    <img src="img/logo.png" alt="IGCE logo" class="w-14 h-14 object-contain site-logo" onerror="this.style.display='none'">
+                </div>
+                <div>
+                    <h1 class="text-primary-900 font-bold text-xl md:text-2xl">Indra Ganesan College of Engineering</h1>
+                    <p class="text-xs text-gray-600">Affiliated to Anna University | NAAC B+ Accredited</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Home</a>
+                <div class="relative group">
+                    <button class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">About</button>
+                    <div class="absolute left-0 mt-2 w-48 dropdown-menu hidden group-hover:block">
+                        <a href="about.html" class="block px-4 py-2 text-sm">About IGCE</a>
+                        <a href="leadership.html" class="block px-4 py-2 text-sm">Leadership</a>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <button class="text-primary-900 font-medium hover:text-secondary-500 transition-colors">Academics & Departments</button>
+                    <div class="absolute left-0 mt-2 w-64 dropdown-menu hidden group-hover:block">
+                        <div class="p-2 font-semibold text-sm text-gray-600">Departments</div>
+                        <a href="departments/cse.html" class="block px-4 py-2 text-sm">Computer Science Engineering</a>
+                        <a href="departments/ece.html" class="block px-4 py-2 text-sm">Electronics & Communication</a>
+                        <a href="departments/mech.html" class="block px-4 py-2 text-sm">Mechanical Engineering</a>
+                        <a href="departments/civil.html" class="block px-4 py-2 text-sm">Civil Engineering</a>
+                        <div class="border-t my-2"></div>
+                        <div class="p-2 font-semibold text-sm text-gray-600">Academics</div>
+                        <a href="academics.html" class="block px-4 py-2 text-sm">Programs</a>
+                        <a href="admissions.html" class="block px-4 py-2 text-sm">Admissions</a>
+                    </div>
+                </div>
+            </nav>
+            <a href="admissions.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-2 px-4 rounded-md transition-all">Admissions</a>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="bg-primary-900 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Departments</h1>
+            <p class="text-xl max-w-3xl mx-auto">World-class education across diverse engineering disciplines</p>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-3">
+        <div class="container mx-auto px-4">
+            <nav class="flex text-sm" aria-label="Breadcrumb">
+                <a href="index.html" class="text-primary-900 hover:text-secondary-500">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gray-600">Departments</span>
+            </nav>
+        </div>
+    </div>
+
+    <main>
+        <!-- Departments Grid -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Computer Science & Engineering -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=300&fit=crop" alt="Computer Science" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i data-feather="cpu" class="text-white w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary-900 mb-3">Computer Science & Engineering</h3>
+                            <p class="text-gray-600 mb-4">Focuses on software development, algorithms, AI, machine learning, and cutting-edge computing technologies.</p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-primary-900 mb-2">Key Areas:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">AI/ML</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Data Science</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Cloud Computing</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Cybersecurity</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600"><i data-feather="users" class="inline w-4 h-4"></i> 60 seats</span>
+                                <a href="departments/cse.html" class="text-secondary-500 font-medium hover:text-secondary-600 flex items-center">
+                                    Department Page <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Electronics & Communication Engineering -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=300&fit=crop" alt="Electronics" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i data-feather="radio" class="text-white w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary-900 mb-3">Electronics & Communication Engineering</h3>
+                            <p class="text-gray-600 mb-4">Covers communication systems, VLSI design, embedded systems, and signal processing technologies.</p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-primary-900 mb-2">Key Areas:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">VLSI Design</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">IoT</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Wireless Tech</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Embedded Systems</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600"><i data-feather="users" class="inline w-4 h-4"></i> 60 seats</span>
+                                <a href="#ece-details" class="text-secondary-500 font-medium hover:text-secondary-600 flex items-center">
+                                    Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mechanical Engineering -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gradient-to-br from-orange-500 to-orange-700 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=300&fit=crop" alt="Mechanical" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i data-feather="settings" class="text-white w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary-900 mb-3">Mechanical Engineering</h3>
+                            <p class="text-gray-600 mb-4">Encompasses design, manufacturing, thermal systems, robotics, and automotive engineering.</p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-primary-900 mb-2">Key Areas:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">CAD/CAM</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Robotics</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Thermal Engg</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Manufacturing</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600"><i data-feather="users" class="inline w-4 h-4"></i> 60 seats</span>
+                                <a href="#mech-details" class="text-secondary-500 font-medium hover:text-secondary-600 flex items-center">
+                                    Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Civil Engineering -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gradient-to-br from-green-500 to-green-700 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=300&fit=crop" alt="Civil" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i data-feather="home" class="text-white w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary-900 mb-3">Civil Engineering</h3>
+                            <p class="text-gray-600 mb-4">Deals with infrastructure design, construction, environmental engineering, and urban planning.</p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-primary-900 mb-2">Key Areas:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Structural</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Transportation</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Environmental</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Geotechnical</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600"><i data-feather="users" class="inline w-4 h-4"></i> 30 seats</span>
+                                <a href="#civil-details" class="text-secondary-500 font-medium hover:text-secondary-600 flex items-center">
+                                    Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Electrical & Electronics Engineering -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gradient-to-br from-yellow-500 to-yellow-700 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=300&fit=crop" alt="Electrical" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i data-feather="zap" class="text-white w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary-900 mb-3">Electrical & Electronics Engineering</h3>
+                            <p class="text-gray-600 mb-4">Focuses on power systems, renewable energy, control systems, and electrical machines.</p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-primary-900 mb-2">Key Areas:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Power Systems</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Renewable Energy</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Automation</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Smart Grids</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600"><i data-feather="users" class="inline w-4 h-4"></i> 30 seats</span>
+                                <a href="#eee-details" class="text-secondary-500 font-medium hover:text-secondary-600 flex items-center">
+                                    Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Information Technology -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gradient-to-br from-red-500 to-red-700 relative overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=300&fit=crop" alt="IT" class="w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-500">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i data-feather="globe" class="text-white w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-primary-900 mb-3">Information Technology</h3>
+                            <p class="text-gray-600 mb-4">Specializes in software engineering, web technologies, networking, and database management.</p>
+                            <div class="mb-4">
+                                <h4 class="font-semibold text-primary-900 mb-2">Key Areas:</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Web Dev</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Networking</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Databases</span>
+                                    <span class="bg-primary-100 text-primary-900 px-3 py-1 rounded-full text-sm">Software Engg</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-600"><i data-feather="users" class="inline w-4 h-4"></i> 60 seats</span>
+                                <a href="#it-details" class="text-secondary-500 font-medium hover:text-secondary-600 flex items-center">
+                                    Learn More <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Common Facilities -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center text-primary-900 mb-12">Department Facilities</h2>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center p-6">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="monitor" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-primary-900 mb-2">Modern Labs</h3>
+                        <p class="text-gray-600 text-sm">State-of-the-art laboratories with latest equipment</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="book-open" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-primary-900 mb-2">Research Centers</h3>
+                        <p class="text-gray-600 text-sm">Dedicated research facilities for innovation</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="users" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-primary-900 mb-2">Expert Faculty</h3>
+                        <p class="text-gray-600 text-sm">Experienced professors and industry professionals</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-secondary-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="briefcase" class="text-primary-900 w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-primary-900 mb-2">Industry Tie-ups</h3>
+                        <p class="text-gray-600 text-sm">Strong partnerships for internships and placements</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-primary-900 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Join IGCE?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Choose your passion and start your engineering journey with us</p>
+                <a href="admissions.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-3 px-8 rounded-md inline-block transition-colors">
+                    Apply Now
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 mr-3">
+                                <img src="img/logo.png" alt="IGCE logo" class="w-10 h-10 object-contain site-logo">
+                            </div>
+                            <h3 class="text-white font-bold text-lg">IGCE</h3>
+                    </div>
+                    <p>Excellence in Engineering Education</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition-colors">Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                    <p>Tiruchirappalli, Tamil Nadu</p>
+                    <p>+91 85086 88845</p>
+                </div>
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center">
+                <p>&copy; 2024 Indra Ganesan College of Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-secondary-500 text-primary-900 p-3 rounded-full shadow-lg opacity-0 invisible transition-all">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

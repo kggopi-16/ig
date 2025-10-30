@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics & Communication Engineering | IGCE</title>
+    <meta name="description" content="Electronics & Communication Engineering Department at Indra Ganesan College of Engineering - Programs, Faculty, Research, and Facilities">
+    <link rel="icon" type="image/x-icon" href="../img/Logo.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 900: '#002B5B', 100: '#e6f0ff' },
+                        secondary: { 500: '#FFD700', 600: '#ccaa00' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/department.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script>
+        // Add scroll animation to header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <!-- Header with navigation will be included here -->
+    <header>
+        <!-- Will be populated from common header template -->
+    </header>
+
+    <!-- Department Hero Section -->
+    <section class="bg-primary-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Electronics & Communication Engineering</h1>
+                    <p class="text-xl mb-6">Leading innovation in electronics and communication technology</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#programs" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-2 px-6 rounded-md transition-colors">Our Programs</a>
+                        <a href="#research" class="border-2 border-white hover:bg-white hover:text-primary-900 font-bold py-2 px-6 rounded-md transition-colors">Research</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="../img/departments/ece-hero.jpg" alt="ECE Department" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Offered -->
+    <section id="programs" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary-900 mb-8 text-center">Programs Offered</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-primary-900 mb-4">B.E. Electronics & Communication Engineering</h3>
+                    <p class="text-gray-600 mb-4">4-year undergraduate program focusing on electronic systems, communication networks, and signal processing.</p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-secondary-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Intake: 60 students</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-secondary-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>AICTE Approved</span>
+                        </li>
+                    </ul>
+                    <a href="be-ece.html" class="text-secondary-500 font-medium hover:text-secondary-600 flex items-center">
+                        Program Details <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-primary-900 mb-4">M.E. Communication Systems</h3>
+                    <p class="text-gray-600 mb-4">2-year postgraduate program specializing in advanced communication technologies.</p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-secondary-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Intake: 18 students</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check-circle" class="text-secondary-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Research Focused</span>
+                        </li>
+                    </ul>
+                    <a href="me-ece.html" class="text-secondary-500 font-medium hover:text-secondary-600 flex items-center">
+                        Program Details <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Areas -->
+    <section id="research" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary-900 mb-8 text-center">Research Areas</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="radio" class="text-primary-900"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary-900 mb-2">Communication Systems</h3>
+                    <p class="text-gray-600">5G technology, wireless communications, and network optimization.</p>
+                </div>
+                <!-- Add more research areas -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty -->
+    <section id="faculty" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary-900 mb-8 text-center">Our Faculty</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Faculty cards will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Labs & Facilities -->
+    <section id="facilities" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-primary-900 mb-8 text-center">Labs & Facilities</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Lab details will be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Will be populated from common footer template -->
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

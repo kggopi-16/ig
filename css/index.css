@@ -1,0 +1,312 @@
+/* ================================================
+   GLOBAL VARIABLES
+================================================ */
+:root {
+  --primary-900: #002B5B;
+  --primary-800: #003d99;
+  --secondary-500: #FFD700;
+}
+
+/* ================================================
+   HERO SLIDER STYLES
+================================================ */
+.hero-slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  min-height: 500px;
+  max-height: 800px;
+}
+
+.hero-slider-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+  z-index: 1;
+}
+
+.hero-slide-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hero-slide.active .hero-slide-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero slider dots */
+.hero-slider-nav {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.hero-slider-dot {
+  width: 2.5rem;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease, width 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-slider-dot.active {
+  background: #fff;
+  width: 3.5rem;
+}
+
+/* ================================================
+   ANNOUNCEMENT TICKER
+================================================ */
+.announcement-ticker-container {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, var(--primary-900), var(--primary-800));
+}
+
+.announcement-ticker-list {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  animation: ticker-left 30s linear infinite;
+  padding: 0 2rem;
+}
+
+.announcement-ticker-list li {
+  position: relative;
+}
+
+.announcement-ticker-list li::after {
+  content: '•';
+  position: absolute;
+  right: -1rem;
+  color: var(--secondary-500);
+}
+
+.announcement-ticker-list li:last-child::after {
+  display: none;
+}
+
+.announcement-ticker-list.paused {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+#announcementPlayPause {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#announcementPlayPause:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#announcementPlayPause i {
+  transition: transform 0.3s ease;
+}
+
+#announcementPlayPause:hover i {
+  transform: scale(1.1);
+}
+
+/* ================================================
+   HEADER QUICK LINKS ADJUSTMENTS
+================================================ */
+#mainHeader .quick-links {
+  justify-content: center;
+  gap: 1rem;
+}
+
+#mainHeader .quick-links a {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* ================================================
+   GENERAL DROPDOWN (NON-NAVIGATION)
+================================================ */
+/* Removed conflicting .dropdown-menu overrides from navigation.css */
+
+/* ================================================
+   QUICK LINK CARDS
+================================================ */
+.quick-link-card {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.quick-link-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ================================================
+   HIGHLIGHT ITEMS ANIMATION
+================================================ */
+.highlight-item {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.highlight-item.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ================================================
+   STATS COUNTER
+================================================ */
+.stat-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.stat-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================================================
+   NEWS CARDS
+================================================ */
+.news-card {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.news-card.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* ================================================
+   TESTIMONIAL SLIDER
+================================================ */
+.testimonial-slider {
+  position: relative;
+}
+
+.testimonial-slider-track {
+  overflow: hidden;
+}
+
+.testimonial-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-slide {
+  flex-shrink: 0;
+}
+
+/* ================================================
+   BACK TO TOP BUTTON
+================================================ */
+#backToTop {
+  z-index: 999;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop.visible {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+#backToTop:hover {
+  transform: translateY(-3px);
+}
+
+/* ================================================
+   STICKY HEADER ANIMATION
+================================================ */
+#mainHeader.scrolled {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  transition: box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+/* ================================================
+   RESPONSIVE IMAGES
+================================================ */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ================================================
+   CARD HOVER EFFECTS
+================================================ */
+.shadow-md {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* ================================================
+   MOBILE RESPONSIVE OPTIMIZATION
+================================================ */
+@media (max-width: 768px) {
+  .hero-slider-prev,
+  .hero-slider-next {
+    padding: 8px;
+  }
+
+  .testimonial-prev,
+  .testimonial-next {
+    display: none;
+  }
+
+  #backToTop {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+  }
+}

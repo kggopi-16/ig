@@ -1,0 +1,78 @@
+/* Department-specific styles */
+
+/* Hero section image overlay */
+.department-hero {
+    position: relative;
+}
+
+.department-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0,43,91,0.9), rgba(0,43,91,0.7));
+    z-index: 1;
+}
+
+.department-hero > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Program cards hover effect */
+.program-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Research area icons */
+.research-icon {
+    transition: transform 0.3s ease;
+}
+
+.research-area:hover .research-icon {
+    transform: scale(1.1);
+}
+
+/* Faculty cards */
+.faculty-card {
+    transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: translateY(-5px);
+}
+
+.faculty-image {
+    transition: filter 0.3s ease;
+}
+
+.faculty-card:hover .faculty-image {
+    filter: brightness(1.1);
+}
+
+/* Lab facility images */
+.lab-image {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.lab-image img {
+    transition: transform 0.3s ease;
+}
+
+.lab-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indra Ganesan College of Engineering | Home</title>
+    <meta name="description" content="Official website of Indra Ganesan College of Engineering, Trichy - NAAC B+ accredited institution affiliated to Anna University">
+    <meta name="keywords" content="IGCE, engineering college, Trichy, Anna University, NAAC accredited">
+    <meta name="theme-color" content="#002B5B">
+    
+    <link rel="icon" type="image/x-icon" href="img/Logo.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#e6f0ff',
+                            100: '#cce0ff',
+                            200: '#99c2ff',
+                            300: '#66a3ff',
+                            400: '#3385ff',
+                            500: '#0066ff',
+                            600: '#0052cc',
+                            700: '#003d99',
+                            800: '#002966',
+                            900: '#002B5B',
+                        },
+                        secondary: {
+                            50: '#fff9e6',
+                            100: '#fff2cc',
+                            200: '#ffe699',
+                            300: '#ffd966',
+                            400: '#ffcc33',
+                            500: '#FFD700',
+                            600: '#ccaa00',
+                            700: '#998000',
+                            800: '#665500',
+                            900: '#332a00',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script>
+        // Add scroll animation to header
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('mainHeader');
+            if (window.scrollY > 40) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <a href="placements.html">Placement</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="examination.html">Controller of Examination</a>
+        <a href="nirf.html">NIRF</a>
+        <a href="accreditation.html">Accreditation</a>
+        <a href="careers.html">Careers</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Main Header -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="IGCE logo">
+            <div class="logo-text">
+            <h1>Indra Ganesan College of Engineering</h1>
+            <p>An Autonomous Institution</p>
+            </div>
+        </a>
+
+        <nav>
+            <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+
+            <li class="dropdown">
+                <a href="about.html">About Us ▾</a>
+                <ul>
+                <li><a href="about.html">Overview</a></li>
+                <li><a href="about.html#vision-mission">Vision & Mission</a></li>
+                <li><a href="about.html#governing-body">Governing Body</a></li>
+                <li><a href="about.html#management">Management</a></li>
+                <li><a href="about.html#principal">Principal's Message</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+                <a href="academics.html">Academics ▾</a>
+                <ul>
+                <li><a href="departments/cse.html">Computer Science & Engineering</a></li>
+                <li><a href="departments/ece.html">Electronics & Communication</a></li>
+                <li><a href="departments/eee.html">Electrical & Electronics</a></li>
+                <li><a href="departments/mech.html">Mechanical Engineering</a></li>
+                <li><a href="departments/civil.html">Civil Engineering</a></li>
+                <li><a href="departments/aids.html">AI & Data Science</a></li>
+                <li><a href="academics.html#programs">Programs Offered</a></li>
+                </ul>
+            </li>
+
+            <li><a href="research.html">Research</a></li>
+
+            <li class="dropdown">
+                <a href="campuses.html">Our Campuses ▾</a>
+                <ul>
+                <li><a href="campuses.html#facilities">Facilities</a></li>
+                <li><a href="campuses.html#library">Library</a></li>
+                <li><a href="campuses.html#hostel">Hostel</a></li>
+                <li><a href="campuses.html#transport">Transport</a></li>
+                <li><a href="campuses.html#sports">Sports</a></li>
+                </ul>
+            </li>
+
+            <li><a href="iqac.html">IQAC</a></li>
+
+            <li><a href="admissions.html" class="btn-admission">Admission</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero slider -->
+    <main id="main-content">
+        <section class="relative overflow-hidden" aria-labelledby="hero-heading">
+            <div class="hero-slider-container relative h-96 md:h-[500px]">
+                <div class="hero-slider-track flex transition-transform duration-700 ease-in-out">
+                    <div class="hero-slide min-w-full relative">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1200&h=630&fit=crop" alt="IGCE Campus View" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+                            <div class="container mx-auto px-4 text-white">
+                                <h2 id="hero-heading" class="text-3xl md:text-5xl font-bold mb-4">Excellence in Engineering Education</h2>
+                                <p class="text-lg md:text-xl max-w-2xl mb-6">Established in 2008, we provide quality education with state-of-the-art infrastructure.</p>
+                                <a href="about.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-3 px-6 rounded-md inline-block transition-colors duration-300">Explore More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide min-w-full relative">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=630&fit=crop" alt="Students in Laboratory" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+                            <div class="container mx-auto px-4 text-white">
+                                <h2 class="text-3xl md:text-5xl font-bold mb-4">Innovative Learning Environment</h2>
+                                <p class="text-lg md:text-xl max-w-2xl mb-6">Hands-on experience with modern equipment and industry-relevant curriculum.</p>
+                                <a href="academics.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-3 px-6 rounded-md inline-block transition-colors duration-300">Our Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-slide min-w-full relative">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&h=630&fit=crop" alt="Campus Life at IGCE" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center">
+                            <div class="container mx-auto px-4 text-white">
+                                <h2 class="text-3xl md:text-5xl font-bold mb-4">Vibrant Campus Life</h2>
+                                <p class="text-lg md:text-xl max-w-2xl mb-6">Join a community that fosters holistic development and lifelong connections.</p>
+                                <a href="facilities.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-3 px-6 rounded-md inline-block transition-colors duration-300">Campus Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider buttons -->
+                <button class="hero-slider-prev absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 p-2 rounded-full shadow-md hover:bg-opacity-100 transition-all z-10" aria-label="Previous slide">
+                    <i data-feather="chevron-left" class="w-6 h-6 text-primary-900"></i>
+                </button>
+                <button class="hero-slider-next absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 p-2 rounded-full shadow-md hover:bg-opacity-100 transition-all z-10" aria-label="Next slide">
+                    <i data-feather="chevron-right" class="w-6 h-6 text-primary-900"></i>
+                </button>
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+                    <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all hero-slider-dot" aria-label="Go to slide 1"></button>
+                    <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all hero-slider-dot" aria-label="Go to slide 2"></button>
+                    <button class="w-3 h-3 rounded-full bg-white bg-opacity-50 hover:bg-opacity-100 transition-all hero-slider-dot" aria-label="Go to slide 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <div class="bg-primary-800 text-white py-2 overflow-hidden" aria-label="Announcements">
+            <div class="container mx-auto px-4 flex items-center justify-center">
+                <div class="font-bold mr-4">Announcements</div>
+                <div class="announcement-ticker-container overflow-hidden relative h-8 mx-auto max-w-3xl">
+                    <ul class="announcement-ticker-list text-center" aria-live="polite" aria-label="Announcements ticker">
+                        <li><a href="#" class="hover:text-secondary-300 transition-colors">Last date for UG admission applications: June 30, 2024</a></li>
+                        <li><a href="#" class="hover:text-secondary-300 transition-colors">Campus placement drive by TCS on July 15th</a></li>
+                        <li><a href="#" class="hover:text-secondary-300 transition-colors">Semester exams postponed to August 1st week</a></li>
+                        <li><a href="#" class="hover:text-secondary-300 transition-colors">Workshop on AI/ML applications - July 5th</a></li>
+                        <li><a href="#" class="hover:text-secondary-300 transition-colors">Guest lecture on Robotics - June 20th</a></li>
+                        <li><a href="#" class="hover:text-secondary-300 transition-colors">Scholarship applications open for meritorious students</a></li>
+                        <li><a href="#" class="hover:text-secondary-300 transition-colors">Annual sports meet registration closes July 10</a></li>
+                        <li><a href="#" class="hover:text-secondary-300 transition-colors">New workshop: Cloud Native Development - August 3</a></li>
+                    </ul>
+                </div>
+                <button id="announcementPlayPause" class="announcement-playpause ml-4 bg-transparent border-none text-white focus:outline-none hover:text-secondary-300 transition-colors" aria-pressed="false" aria-label="Play or pause announcements">
+                    <i data-feather="pause" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+
+        <section class="py-16 bg-white" aria-labelledby="about-heading">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <h2 id="about-heading" class="text-3xl font-bold text-primary-900 mb-6">About IGCE</h2>
+                        <p class="text-gray-700 mb-6">Indra Ganesan College of Engineering (IGCE) is a premier educational institution established in 2008. We are proudly affiliated with Anna University and accredited with NAAC B+ grade, reflecting our commitment to academic excellence.</p>
+                        <div class="grid grid-cols-2 gap-6 mb-8">
+                            <div>
+                                <div class="text-3xl font-bold text-secondary-500 mb-2">15+</div>
+                                <p class="text-gray-600">Years of Excellence</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-secondary-500 mb-2">2000+</div>
+                                <p class="text-gray-600">Students</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-secondary-500 mb-2">150+</div>
+                                <p class="text-gray-600">Expert Faculty</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold text-secondary-500 mb-2">85%</div>
+                                <p class="text-gray-600">Placement Rate</p>
+                            </div>
+                        </div>
+                        <a href="about.html" class="inline-flex items-center text-primary-900 font-semibold hover:text-secondary-500 transition-colors">
+                            Learn More <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <img src="img/campus.jpg" alt="IGCE Campus" class="w-full h-96 object-cover rounded-lg shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-50" aria-labelledby="quick-links-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="quick-links-heading" class="text-3xl font-bold text-center text-primary-900 mb-12">Explore IGCE</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <a href="admissions.html" class="quick-link-card group">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all h-full flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary-100 transition-colors">
+                                <i data-feather="edit" class="text-primary-900 group-hover:text-secondary-500 transition-colors"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary-900 mb-2">Admissions</h3>
+                            <p class="text-gray-600">Learn about our admission process, requirements, and important dates</p>
+                        </div>
+                    </a>
+                    <a href="departments.html" class="quick-link-card group">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all h-full flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary-100 transition-colors">
+                                <i data-feather="layers" class="text-primary-900 group-hover:text-secondary-500 transition-colors"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary-900 mb-2">Departments</h3>
+                            <p class="text-gray-600">Explore our engineering departments and specialized programs</p>
+                        </div>
+                    </a>
+                    <a href="facilities.html" class="quick-link-card group">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all h-full flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary-100 transition-colors">
+                                <i data-feather="home" class="text-primary-900 group-hover:text-secondary-500 transition-colors"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary-900 mb-2">Campus Facilities</h3>
+                            <p class="text-gray-600">Discover our state-of-the-art labs, library, and recreational spaces</p>
+                        </div>
+                    </a>
+                    <a href="placements.html" class="quick-link-card group">
+                        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all h-full flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-secondary-100 transition-colors">
+                                <i data-feather="briefcase" class="text-primary-900 group-hover:text-secondary-500 transition-colors"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary-900 mb-2">Placements</h3>
+                            <p class="text-gray-600">See our placement records and career support services</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-primary-900 text-white" aria-labelledby="highlights-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="highlights-heading" class="text-3xl font-bold text-center mb-12">Why Choose IGCE?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="highlight-item opacity-0 translate-y-10 transition-all duration-500">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-secondary-500 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i data-feather="award" class="text-primary-900 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">NAAC B+ Accredited</h3>
+                                <p>Recognized for quality education by the National Assessment and Accreditation Council</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-item opacity-0 translate-y-10 transition-all duration-500 delay-150">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-secondary-500 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i data-feather="users" class="text-primary-900 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Experienced Faculty</h3>
+                                <p>Learn from highly qualified professors with industry and research experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-item opacity-0 translate-y-10 transition-all duration-500 delay-300">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-secondary-500 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i data-feather="cpu" class="text-primary-900 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Modern Infrastructure</h3>
+                                <p>Well-equipped labs, smart classrooms, and high-speed campus network</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-item opacity-0 translate-y-10 transition-all duration-500">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-secondary-500 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i data-feather="book" class="text-primary-900 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Industry-Aligned Curriculum</h3>
+                                <p>Programs designed with input from industry leaders for career readiness</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-item opacity-0 translate-y-10 transition-all duration-500 delay-150">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-secondary-500 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i data-feather="globe" class="text-primary-900 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Global Exposure</h3>
+                                <p>International collaborations, exchange programs, and conferences</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight-item opacity-0 translate-y-10 transition-all duration-500 delay-300">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-secondary-500 rounded-full p-3 mr-4 flex-shrink-0">
+                                <i data-feather="trending-up" class="text-primary-900 w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Strong Placement Record</h3>
+                                <p>90% placement rate with top recruiters from diverse industries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white" aria-labelledby="stats-heading">
+            <div class="container mx-auto px-4">
+                <h2 id="stats-heading" class="text-3xl font-bold text-center text-primary-900 mb-12">IGCE at a Glance</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="stat-item">
+                        <div class="text-4xl md:text-5xl font-bold text-primary-900 mb-2" data-counter="16">0</div>
+                        <div class="text-gray-600 uppercase text-sm tracking-wider">Years of Excellence</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="text-4xl md:text-5xl font-bold text-primary-900 mb-2" data-counter="8">0</div>
+                        <div class="text-gray-600 uppercase text-sm tracking-wider">Departments</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="text-4xl md:text-5xl font-bold text-primary-900 mb-2" data-counter="150">0</div>
+                        <div class="text-gray-600 uppercase text-sm tracking-wider">Faculty Members</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="text-4xl md:text-5xl font-bold text-primary-900 mb-2" data-counter="90">0</div>
+                        <div class="text-gray-600 uppercase text-sm tracking-wider">Placement %</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-50" aria-labelledby="news-heading">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center mb-12">
+                    <h2 id="news-heading" class="text-3xl font-bold text-primary-900">News & Events</h2>
+                    <a href="news.html" class="text-primary-900 font-medium hover:text-secondary-500 transition-colors flex items-center mt-4 md:mt-0">
+                        View All <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <article class="news-card opacity-0 translate-y-10 transition-all duration-300">
+                        <a href="#" class="block group">
+                            <div class="relative overflow-hidden rounded-lg mb-4 h-48">
+                                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=640&h=360&fit=crop" alt="IGCE students at competition" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-0 left-0 bg-secondary-500 text-primary-900 px-3 py-1 font-bold">June 15, 2024</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary-900 mb-2 group-hover:text-secondary-500 transition-colors">IGCE Team Wins National Tech Competition</h3>
+                            <p class="text-gray-600">Our computer science students secured first place in the national-level hackathon...</p>
+                        </a>
+                    </article>
+                    <article class="news-card opacity-0 translate-y-10 transition-all duration-300 delay-150">
+                        <a href="#" class="block group">
+                            <div class="relative overflow-hidden rounded-lg mb-4 h-48">
+                                <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=640&h=360&fit=crop" alt="New research lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-0 left-0 bg-secondary-500 text-primary-900 px-3 py-1 font-bold">May 28, 2024</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary-900 mb-2 group-hover:text-secondary-500 transition-colors">New AI Research Lab Inaugurated</h3>
+                            <p class="text-gray-600">The college has established a state-of-the-art AI research facility with industry partnership...</p>
+                        </a>
+                    </article>
+                    <article class="news-card opacity-0 translate-y-10 transition-all duration-300 delay-300">
+                        <a href="#" class="block group">
+                            <div class="relative overflow-hidden rounded-lg mb-4 h-48">
+                                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=640&h=360&fit=crop" alt="Annual convocation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                <div class="absolute bottom-0 left-0 bg-secondary-500 text-primary-900 px-3 py-1 font-bold">April 10, 2024</div>
+                            </div>
+                            <h3 class="text-xl font-bold text-primary-900 mb-2 group-hover:text-secondary-500 transition-colors">Annual Convocation Ceremony Held</h3>
+                            <p class="text-gray-600">The 12th annual convocation ceremony saw 450 students graduating with honors...</p>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <section class="py-16 bg-primary-900 text-white" aria-labelledby="cta-heading">
+            <div class="container mx-auto px-4 text-center">
+                <h2 id="cta-heading" class="text-3xl md:text-4xl font-bold mb-6">Ready to Begin Your Engineering Journey?</h2>
+                <p class="text-xl max-w-3xl mx-auto mb-8">Join Indra Ganesan College of Engineering and become part of a legacy of excellence in technical education.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="admissions.html" class="bg-secondary-500 hover:bg-secondary-600 text-primary-900 font-bold py-3 px-8 rounded-md inline-block transition-colors duration-300">Apply Now</a>
+                    <a href="contact.html" class="bg-transparent hover:bg-white hover:text-primary-900 border-2 border-white text-white font-bold py-3 px-8 rounded-md inline-block transition-colors duration-300">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300 pt-12 pb-6" aria-label="Footer">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 mr-3">
+                            <img src="img/logo.png" alt="IGCE logo" class="w-10 h-10 object-contain site-logo">
+                        </div>
+                        <h3 class="text-white font-bold text-lg">Indra Ganesan College of Engineering</h3>
+                    </div>
+                    <p class="mb-4">Established in 2008, affiliated to Anna University, and accredited with NAAC B+ grade.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" aria-label="Facebook" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" aria-label="YouTube" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-feather="youtube" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="admissions.html" class="hover:text-white transition-colors">Admissions</a></li>
+                        <li><a href="departments.html" class="hover:text-white transition-colors">Departments</a></li>
+                        <li><a href="facilities.html" class="hover:text-white transition-colors">Facilities</a></li>
+                        <li><a href="placements.html" class="hover:text-white transition-colors">Placements</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contact Us</h3>
+                    <address class="not-italic">
+                        <div class="flex items-start mb-3">
+                            <i data-feather="map-pin" class="w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
+                            <p>Madurai Main Rd, Manikandam,<br>Tiruchirappalli,<br>Tamil Nadu 620012</p>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <i data-feather="mail" class="w-5 h-5 mr-3 flex-shrink-0"></i>
+                            <a href="mailto:info@igceng.in" class="hover:text-white transition-colors">info@igceng.in</a>
+                        </div>
+                        <div class="flex items-center mb-3">
+                            <i data-feather="phone" class="w-5 h-5 mr-3 flex-shrink-0"></i>
+                            <a href="tel:+918508688845" class="hover:text-white transition-colors">+91 85086 88845</a>
+                        </div>
+                    </address>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 Indra Ganesan College of Engineering. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="sitemap.html" class="hover:text-white transition-colors">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-secondary-500 text-primary-900 p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-secondary-500" aria-label="Back to top">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        // Header shrink on scroll
+        (function(){
+            const header = document.querySelector('header');
+            if(!header) return;
+            const SHRINK_AFTER = 40; // px
+            function onScroll(){
+                const sc = window.scrollY || window.pageYOffset;
+                if(sc > SHRINK_AFTER) header.classList.add('scrolled');
+                else header.classList.remove('scrolled');
+            }
+            window.addEventListener('scroll', onScroll, {passive: true});
+            // run once on load
+            onScroll();
+        })();
+
+        feather.replace();
+    </script>
+</body>
+</html>
